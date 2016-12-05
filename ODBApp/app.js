@@ -21,9 +21,6 @@ app.listen(3000, function(){
 	console.log("Connected 3000 port");
 });
 
-app.get("/upload",function(req,res){
-	res.render("upload");
-});
 app.get("/topic/add",function(req,res){
 	var sql = "SELECT * FROM topic";
 	db.query(sql).then(function(topics){
